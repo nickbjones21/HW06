@@ -31,7 +31,7 @@
                     <li><a href="#HomePage">Home</a></li>
                     <li><a href="#AddPage">Add Visitor</a></li>
                     <li><a href="#DisplayPage">View All Visitors</a></li>
-                    <li><a href="#CalPage">View Calendar</a></li>
+                    <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
                 </ul>
             </div>
         </div>
@@ -39,8 +39,11 @@
         <!-- Content -->
         <div data-role="content">
             <div>
+              <div id="splashText">
                 <h2 class="synopsis">Appointments made easy...</h2>
-                <button id="getStartedBtn" data-inline="true">Get started</button>
+              </div>
+              <a href = "#AddPage">
+                <button id="getStartedBtn" class="pulse" data-inline="true">Get started</button></a>
             </div>
         </div>
 
@@ -65,7 +68,7 @@
                   <li><a href="#HomePage">Home</a></li>
                   <li><a href="#AddPage">Add Visitor</a></li>
                   <li><a href="#DisplayPage">View All Visitors</a></li>
-                  <li><a href="#CalPage">View Calendar</a></li>
+                  <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
                 </ul>
             </div>
         </div>
@@ -92,7 +95,7 @@
                     <option value="Other">Other</option>
                 </select>
                 Enter priority: <br>
-                <select name="select-priority" id="visitPriority" data-theme="b">
+                <select id="visitPriority" data-theme="b">
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
                     <option value="High">High</option>
@@ -123,7 +126,7 @@
                   <li><a href="#HomePage">Home</a></li>
                   <li><a href="#AddPage">Add Visitor</a></li>
                   <li><a href="#DisplayPage">View All Visitors</a></li>
-                  <li><a href="#CalPage">View Calendar</a></li>
+                  <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
                 </ul>
             </div>
         </div>
@@ -169,7 +172,7 @@
                 <li><a href="#HomePage">Home</a></li>
                 <li><a href="#AddPage">Add Visitor</a></li>
                 <li><a href="#DisplayPage">View All Visitors</a></li>
-                <li><a href="#CalPage">View Calendar</a></li>
+                <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
               </ul>
           </div>
       </div>
@@ -177,8 +180,8 @@
       <!-- Content -->
       <div data-role="content">
         <div>
-            <h2 class="synopsis">A task manager for everything you need to do</h2>
-            <button id="getStartedBtn" data-inline="true">Get started with a task</button>
+            <h2 class="synopsis">View Schedule & Arrange Time</h2>
+            <p>Functionality will be added here to arrange the visits in user-preferred order via drag & drop blocks overlaid over a calendar or single-day view.</p>
         </div>
       </div>
 
