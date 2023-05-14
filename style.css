@@ -17,16 +17,14 @@ div {
     color: #8ec45f;
 }
 
-#splashText {
+h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
-  
-  #splashText h2 {
     margin-bottom: 20px;
+
   }
   
 
