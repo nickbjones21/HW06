@@ -17,17 +17,21 @@
 </head>
 
 <body>
-    <!-- Home page -->
+
+
+
+
+    <!-- Home page --------------------------------->
     <div data-role="page" id="HomePage" data-theme="b">
         <!-- Header -->
         <div data-role="header">
-            <h1 class="title">Task Manager</h1>
+            <h1 class="title">Visit Manager</h1>
             <div data-role="navbar">
                 <ul>
                     <li><a href="#HomePage">Home</a></li>
-                    <li><a href="#AddPage">Add Task</a></li>
-                    <li><a href="#DisplayPage">View Tasks</a></li>
-                    <li><a href="#CalcPage">Calculate</a></li>
+                    <li><a href="#AddPage">Add Visitor</a></li>
+                    <li><a href="#DisplayPage">View All Visitors</a></li>
+                    <li><a href="#CalPage">View Calendar</a></li>
                 </ul>
             </div>
         </div>
@@ -35,8 +39,8 @@
         <!-- Content -->
         <div data-role="content">
             <div>
-                <h2 class="synopsis">A task manager for everything you need to do</h2>
-                <button id="getStartedBtn" data-inline="true">Get started with a task</button>
+                <h2 class="synopsis">Appointments made easy...</h2>
+                <button id="getStartedBtn" data-inline="true">Get started</button>
             </div>
         </div>
 
@@ -46,17 +50,22 @@
         </div>
     </div>
 
-    <!-- Add page -->
+
+
+
+
+
+    <!-- Add page --------------------------------->
     <div data-role="page" id="AddPage" data-theme="b">
         <!-- Header -->
         <div data-role="header">
-            <h1 class="title">Task Manager</h1>
+            <h1 class="title">Visit Manager</h1>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#HomePage">Home</a></li>
-                    <li><a href="#AddPage">Add Task</a></li>
-                    <li><a href="#DisplayPage">View Tasks</a></li>
-                    <li><a href="#CalcPage">Calculate</a></li>
+                  <li><a href="#HomePage">Home</a></li>
+                  <li><a href="#AddPage">Add Visitor</a></li>
+                  <li><a href="#DisplayPage">View All Visitors</a></li>
+                  <li><a href="#CalPage">View Calendar</a></li>
                 </ul>
             </div>
         </div>
@@ -64,73 +73,57 @@
         <!-- Content -->
         <div data-role="content">
             <div>
-                <h2 class="synopsis">Add a task</h2>
+                <h2 class="synopsis">Add a Visitor</h2>
 
-                Enter task name: <br>
-                <input type="text" value="" id="taskNameInput" />
-                <div id="alert_message"></div>
-                Enter task type: <br>
-                <select name="select-type" id="taskTypeInput" data-theme="b">
-                    <option value="Work">Work</option>
-                    <option value="School">School</option>
-                    <option value="Life">Life</option>
+                Enter Visitor First Name: <br>
+                <input type="text" value="" id="visitorFName" />
+                <div id="alert_messageF"></div>
+                Enter Visitor Last Name:
+                <input type="text" value="" id="visitorLName" />
+                <div id="alert_messageL"></div>
+                Enter Visit type: <br>
+                <select name="select-type" id="visitType" data-theme="b">
+                    <option value="Walk-in">Walk-in (No Appointment)</option>
+                    <option value="Appointment">Appointment</option>
+                    <option value="Visiting-Guest">Visiting Guest</option>
+                    <option value="Visiting-Staff">Visiting Staff</option>
+                    <option value="Visitor-Support">In-visit Support Person</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="Other">Other</option>
                 </select>
                 Enter priority: <br>
-                <select name="select-priority" id="taskPriorityInput" data-theme="b">
+                <select name="select-priority" id="visitPriority" data-theme="b">
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
                     <option value="High">High</option>
                 </select>
 
                 <br>
-                <button id="addTaskBtn" data-inline="true">Click To Add Task</button>
+                <button id="addVisitorBtn" data-inline="true">Click To Add Visit</button>
             </div>
             <div id="successMessage"></div>
         </div>
         </div>
 
 
-        <!--Calculate page-->
-        <div data-role="page" id="CalcPage" data-theme="b">
-          <!-- Header -->
-          <div data-role="header">
-              <h1 class="title">Task Manager</h1>
-              <div data-role="navbar">
-                  <ul>
-                      <li><a href="#HomePage">Home</a></li>
-                      <li><a href="#AddPage">Add Task</a></li>
-                      <li><a href="#DisplayPage">View Tasks</a></li>
-                      <li><a href="#CalcPage">Calculate</a></li>
-                  </ul>
-              </div>
-          </div>
-  
-          <!-- Content -->
-          <div data-role="content">
-            <div>
-                <h2 class="synopsis">A task manager for everything you need to do</h2>
-                <button id="getStartedBtn" data-inline="true">Get started with a task</button>
-            </div>
-        </div>
-</div>
 
-        <!-- Footer -->
-        <div data-role="footer" data-position="fixed">
-            <h1>Made for PROG209</h1>
-        </div>
-    </div>
 
-    <!-- Display page -->
+
+
+
+
+
+    <!-- Display page ------------------------------------------------>
     <div data-role="page" id="DisplayPage" data-theme="b">
         <!-- Header -->
         <div data-role="header">
-            <h1 class="title">Task Manager</h1>
+            <h1 class="title">Visit Manager</h1>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#HomePage">Home</a></li>
-                    <li><a href="#AddPage">Add Task</a></li>
-                    <li><a href="#DisplayPage">View Tasks</a></li>
-                    <li><a href="#CalcPage">Calculate</a></li>
+                  <li><a href="#HomePage">Home</a></li>
+                  <li><a href="#AddPage">Add Visitor</a></li>
+                  <li><a href="#DisplayPage">View All Visitors</a></li>
+                  <li><a href="#CalPage">View Calendar</a></li>
                 </ul>
             </div>
         </div>
@@ -138,39 +131,16 @@
         <!-- Content -->
         <div data-role="content">
             <div>
-                <h2 class="synopsis">See your task list</h2>
+                <h2 class="synopsis">See your guest list</h2>
 
-                <div id="table">
-                    Uh oh, you don't have anything in your task list yet. Try adding one
-                </div>
+                <ul id="visitorList"></ul>
+                <div id="emptyContent"></div>
 
-                <button id="getStartedBtn2" data-inline="true" style="display: block">Get started with a task</button>
+                <button id="getStartedBtn2" data-inline="true" style="display: block">Add a visit</button>
 
-                <button id="deleteDoneTasksBtn" data-inline="true" style="display: none">Delete completed tasks</button>
+                <button id="deleteVisitorBtn" data-inline="true" style="display: none">Delete visits</button>
 
-                <!-- Sorting options -->
-                <br><br><hr>
-                Sort by: 
-                <select name="select-type" id="sortSetting" class="regenDisplay" data-theme="b" data-inline="true">
-                    <option value="timeAdded">Time added</option>
-                    <option value="name">Name</option>
-                    <option value="type">Type</option>
-                    <option value="priorityNumber">Priority</option>
-                </select>
-                <input type="checkbox" id="sortAscendingCheckBox" class="regenDisplay" checked="true"> Ascending
-
-                <!-- Filtering options -->
-                <br><br>
-                Filter by type:
-                <input type="checkbox" class="filterTypeSetting regenDisplay" value="Work"> Work
-                <input type="checkbox" class="filterTypeSetting regenDisplay" value="School"> School
-                <input type="checkbox" class="filterTypeSetting regenDisplay" value="Life"> Life
-                <br><br>
-                Filter by priority:
-                <input type="checkbox" class="filterPrioritySetting regenDisplay" value="Low"> Low
-                <input type="checkbox" class="filterPrioritySetting regenDisplay" value="Medium"> Medium
-                <input type="checkbox" class="filterPrioritySetting regenDisplay" value="High"> High
-                
+  
 
             </div>
         </div>
@@ -180,6 +150,48 @@
             <h1>Made for PROG209</h1>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <!--Calendar page--------------------------------------------->
+    <div data-role="page" id="CalPage" data-theme="b">
+      <!-- Header -->
+      <div data-role="header">
+          <h1 class="title">Visit Manager</h1>
+          <div data-role="navbar">
+              <ul>
+                <li><a href="#HomePage">Home</a></li>
+                <li><a href="#AddPage">Add Visitor</a></li>
+                <li><a href="#DisplayPage">View All Visitors</a></li>
+                <li><a href="#CalPage">View Calendar</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Content -->
+      <div data-role="content">
+        <div>
+            <h2 class="synopsis">A task manager for everything you need to do</h2>
+            <button id="getStartedBtn" data-inline="true">Get started with a task</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div data-role="footer" data-position="fixed">
+          <h1>Made for PROG209</h1>
+      </div>
+    </div>
+
+
+
+
+
 
     <script type="text/javascript" src="script.js"></script>
 </body>
