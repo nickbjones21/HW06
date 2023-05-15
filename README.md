@@ -5,4 +5,4 @@ Version 1 of first course project
 
 This project has taken the shape of a 4-paged JQuery Mobile app designed for managing general appointments and basic scheduling.
 
-Built by Nicholas Jones for PROG209
+Built by Nicholas Jones and Akiel Taylor for PROG209
