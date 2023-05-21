@@ -34,7 +34,10 @@ function createVisit() {
   visitorArray.push(visitorObject);
 
   $("#successMessage").text("Visitor added successfully!");
-
+  
+  setTimeout(function(){
+    $("#successMessage").text("");
+  }, 3000);
 
   //for clearing input fields fname and lname
   document.getElementById("visitorFName").value = "";
