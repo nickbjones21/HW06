@@ -34,7 +34,7 @@
                     <li><a href="#HomePage">Home</a></li>
                     <li><a href="#AddPage">Add Visitor</a></li>
                     <li><a href="#DisplayPage">View All Visitors</a></li>
-                    <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
+                    <!-- <li><a href="#CalPage" id="calendarPage">Schedule</a></li> -->
                 </ul>
             </div>
         </div>
@@ -71,7 +71,7 @@
                   <li><a href="#HomePage">Home</a></li>
                   <li><a href="#AddPage">Add Visitor</a></li>
                   <li><a href="#DisplayPage">View All Visitors</a></li>
-                  <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
+                  <!-- <li><a href="#CalPage" id="calendarPage">Schedule</a></li> -->
                 </ul>
             </div>
         </div>
@@ -129,7 +129,7 @@
                   <li><a href="#HomePage">Home</a></li>
                   <li><a href="#AddPage">Add Visitor</a></li>
                   <li><a href="#DisplayPage">View All Visitors</a></li>
-                  <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
+                  <!-- <li><a href="#CalPage" id="calendarPage">Schedule</a></li> -->
                 </ul>
             </div>
         </div>
@@ -166,8 +166,8 @@
 
 
 
-    <!--Calendar page--------------------------------------------->
-    <div data-role="page" id="CalPage" data-theme="a">
+    <!--Detail page (was CalPage previously)--------------------------------------------->
+    <div data-role="page" id="DetailPage" data-theme="a">
       <!-- Header -->
       <div data-role="header">
           <h1 class="title">Visit Manager</h1>
@@ -176,16 +176,21 @@
                 <li><a href="#HomePage">Home</a></li>
                 <li><a href="#AddPage">Add Visitor</a></li>
                 <li><a href="#DisplayPage">View All Visitors</a></li>
-                <li><a href="#CalPage" id="calendarPage">Schedule</a></li>
+                <!-- <li><a href="#CalPage" id="calendarPage">Schedule</a></li> -->
               </ul>
           </div>
       </div>
 
       <!-- Content -->
       <div data-role="content">
-        <div>
-            <h2 class="synopsis">View Schedule & Arrange Time</h2>
-            <p>Functionality will be added here to arrange the visits in user-preferred order via drag & drop blocks overlaid over a calendar or single-day view.</p>
+        <div id="visitorAllDetails">
+            <h2 class="synopsis">Details for <div id="visitorFullName"></div></h2>
+        <br><br>
+        <h3 class="visitorDetailsVisType">Visitor Type:</h3><br>
+            <p><div id="visitorDetailsType"></div></p><br>
+        <h3 class="visitorDetailsVisPriority">Priority Level:</h3><br>
+            <p><div id="visitorDetailsPriority"></div></p><br>
+
         </div>
       </div>
 

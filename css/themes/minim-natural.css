@@ -240,7 +240,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-page-theme-a .ui-panel-wrapper {
 	background-color: #e3e4e0 /*{a-page-background-color}*/;
 	border-color: #919191 /*{a-page-border}*/;
-	color: #ffffff /*{a-page-color}*/;
+	color: #c7c7bb /*{a-page-color}*/;
 	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #ffffff /*{a-page-shadow-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
@@ -350,7 +350,7 @@ html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-a .ui-btn-active {
 	background-color: #7f867b /*{a-active-background-color}*/;
 	border-color: #919191 /*{a-active-border}*/;
-	color: #ffffff /*{a-active-color}*/;
+	color: #b61313 /*{a-active-color}*/;
 	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
 }
 /* Active radio button icon */
@@ -573,4 +573,16 @@ input,
     margin-top: 10px;
     animation: jiggle 4s ease-in-out;
     animation-iteration-count: infinite;
+}
+
+#visitorAllDetails{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#visitorDetailsType, #visitorDetailsPriority{
+	text-decoration: underline;
+	color: #3E3E3E;
+	font-weight: bolder;
 }
