@@ -35,6 +35,7 @@ function createVisit() {
 
   $("#successMessage").text("Visitor added successfully!");
 
+
   //for clearing input fields fname and lname
   document.getElementById("visitorFName").value = "";
   document.getElementById("visitorLName").value = "";

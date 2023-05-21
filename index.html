@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <link rel="stylesheet" type="text/css" href="css\themes\minim-natural.css" />
-    <link rel="stylesheet" href="css\themes\minim-natural.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\themes\minim-natural.min.css" />
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
@@ -81,13 +81,13 @@
             <div>
                 <h2 class="synopsis">Add a Visitor</h2>
 
-                Enter Visitor First Name: <br>
+                <p id="bodyText">Enter Visitor First Name: <br></p>
                 <input type="text" value="" id="visitorFName" />
                 <div id="alert_messageF"></div>
-                Enter Visitor Last Name:
+                <p id="bodyText">Enter Visitor Last Name:</p>
                 <input type="text" value="" id="visitorLName" />
                 <div id="alert_messageL"></div>
-                Enter Visit type: <br>
+                <p id="bodyText">Enter Visit type: </p>
                 <select name="select-type" id="visitType" data-theme="a">
                     <option value="Walk-in">Walk-in (No Appointment)</option>
                     <option value="Appointment">Appointment</option>
@@ -96,7 +96,7 @@
                     <option value="Visitor-Support">In-visit Support Person</option>
                     <option value="Emergency">Emergency</option>
                     <option value="Other">Other</option>
-                </select>
+                </select><br>
                 Enter priority: <br>
                 <select id="visitPriority" data-theme="a">
                     <option value="Low">Low</option>
@@ -187,9 +187,9 @@
             <h2 class="synopsis">Details for <div id="visitorFullName"></div></h2>
         <br><br>
         <h3 class="visitorDetailsVisType">Visitor Type:</h3><br>
-            <p><div id="visitorDetailsType"></div></p><br>
+            <p id="bodyText"><div id="visitorDetailsType"></div></p><br>
         <h3 class="visitorDetailsVisPriority">Priority Level:</h3><br>
-            <p><div id="visitorDetailsPriority"></div></p><br>
+            <p id="bodyText"><div id="visitorDetailsPriority"></div></p><br>
 
         </div>
       </div>
